@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Aaxonation</title>
+        <link rel="stylesheet" type="text/css" href="/css/about.css">
+    </head>
+    <body>
+        <header>
+            <a href="main.html" class="logo">AAXONATION</a>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src="/img/stars.png" id="stars">
+            <img src="/img/moon.png" id="moon">
+            <img src="/img/mountains_behind.png" id="mountains_behind">
+            <h2 id="text">ABOUT</h2>
+            <img src="/img/mountains_front.png" id="mountains_front">
+        </section>
+        <div class="sec" id="sec">
+            <h2>About</h2>
+            <p>Greetings! I'm Aaron George, a passionate individual with a multicultural background, born and raised in Oman before transitioning to Kerala for my high school education. My educational journey has been shaped by diverse experiences, from attending the International School of Muscat (ISM) in Oman to completing my 12th grade at Sacred Heart Anglo Indian Public School (SAPS) in Kerala.<br><br>
+                Throughout my school years, I found my stride in the world of sports, seizing numerous achievements and accolades along the way. Whether it was on the field, track, or court, sports became more than just a hobby – they became a part of my identity, instilling in me values of discipline, perseverance, and teamwork.<br><br>
+                As fate would have it, the onset of the COVID-19 pandemic brought about a significant shift in my interests and aspirations. With the transition to online classes, I found myself exploring new avenues, particularly in the realm of technology. What started as a means to pass the time soon blossomed into a genuine passion for gaming and all things tech-related.This newfound fascination became the catalyst for my journey into computer science. Inspired by the creative possibilities and technical challenges of game development, I set my sights on pursuing a career in this dynamic field. With each click of the mouse and line of code, I'm fueled by the excitement of bringing virtual worlds to life and crafting immersive experiences for players around the globe.
+                
+            </p>
+        </div>
+        <script>
+            let stars = document.getElementById('stars');
+            let moon = document.getElementById('moon');
+            let mountains_behind = document.getElementById('mountains_behind');
+            let text = document.getElementById('text');
+            let btn = document.getElementById('btn');
+            let mountains_front = document.getElementById('mountains_front');
+            let header = document.querySelector('header')
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                stars.style.left = value * 0.25 + 'px';
+                moon.style.top = value * 1.6 + 'px';
+                mountains_behind.style.top = value * 0.5 + 'px';
+                mountains_front.style.top = value * 0 + 'px';
+                text.style.marginRight = value * 3 + 'px';
+                text.style.marginTop = value * 0.5 + 'px';
+                btn.style.marginTop = value * 1.5 + 'px';
+                header.style.top = value * 0.5 + 'px';
+            })
+        </script>
+    </body>
+</html>

@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Aaxonation</title>
+        <link rel="stylesheet" type="text/css" href="/css/contact.css">
+        <script src="https://kit.fontawesome.com/a68d1360f7.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <a href="main.html" class="logo">AAXONATION</a>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src="/img/stars.png" id="stars">
+            <img src="/img/moon.png" id="moon">
+            <img src="/img/mountains_behind.png" id="mountains_behind">
+            <h2 id="text">CONTACT</h2>
+            <img src="/img/mountains_front.png" id="mountains_front">
+        </section>
+        <div class="sec" id="sec">
+            <div id="main">
+                <a href="https://www.facebook.com/Proaaron2005/" target="_blank">
+                    <div class="card blue-bg white-color scale">
+                        <i class="fa-brands fa-facebook fa-2x"></i>
+                        <p><strong>Facebook</strong></p>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/_exotic.aaron_/" target="_blank">
+                    <div class="card pink-bg white-color scale">
+                        <i class="fa-brands fa-instagram fa-2x"></i>
+                        <p><strong>Instagram</strong></p>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/aaron-george-8a7760287/" target="_blank">
+                    <div class="card dark-blue-bg white-color scale">
+                        <i class="fa-brands fa-linkedin fa-2x"></i>
+                        <p><strong>LinkedIn</strong></p>
+                    </div>
+                </a>
+                <a href="https://github.com/aaxonxn" target="_blank">
+                    <div class="card purple-bg white-color scale">
+                        <i class="fa-brands fa-github fa-2x"></i>
+                        <p><strong>Github</strong></p>
+                    </div>
+                </a>
+                <a href="https://youtube.com" target="_blank">
+                    <div class="card red-bg white-color scale">
+                        <i class="fa-brands fa-youtube fa-2x"></i>
+                        <p><strong>YouTube</strong></p>
+                    </div>
+                </a>
+                <a href="https://twitter.com/aaxonxn" target="_blank">
+                    <div class="card dark-blue-bg white-color scale">
+                        <i class="fa-brands fa-twitter fa-2x"></i>
+                        <p><strong>Twitter</strong></p>
+                    </div>
+                </a>
+                <a href="https://wa.me/919037422528">
+                    <div class="card green-bg white-color scale">
+                        <i class="fa-brands fa-whatsapp fa-2x"></i>
+                        <p><strong>Whatsapp</strong></p>
+                    </div>
+                </a>
+                <a href="https://t.me/shipwrecked00" target="_blank">
+                    <div class="card dark-blue-bg white-color scale">
+                        <i class="fa-brands fa-telegram fa-2x"></i>
+                        <p><strong>Telegram</strong></p>
+                    </div>
+                </a>
+                <a href="https://www.messenger.com/t/100076249423635" target="_blank">
+                    <div class="card dark-blue-bg white-color scale">
+                        <i class="fa-brands fa-facebook-messenger fa-2x"></i>
+                        <p><strong>Messenger</strong></p>
+                    </div>
+                </a>
+        </div>
+        <script>
+            let stars = document.getElementById('stars');
+            let moon = document.getElementById('moon');
+            let mountains_behind = document.getElementById('mountains_behind');
+            let text = document.getElementById('text');
+            let btn = document.getElementById('btn');
+            let mountains_front = document.getElementById('mountains_front');
+            let header = document.querySelector('header')
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                stars.style.left = value * 0.25 + 'px';
+                moon.style.top = value * 3 + 'px';
+                mountains_behind.style.top = value * 0.5 + 'px';
+                mountains_front.style.top = value * 0 + 'px';
+                text.style.marginRight = value * 3 + 'px';
+                text.style.marginTop = value * 0.5 + 'px';
+                btn.style.marginTop = value * 1.5 + 'px';
+                header.style.top = value * 0.5 + 'px';
+            })
+        </script>
+    </body>
+</html>

@@ -136,3 +136,101 @@ section img#mountains_front
     font-size: 1em;
     color:#fff;
 }
+#main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 30px;
+    padding: 20px 20px;
+    align-items: center;
+    justify-content: center;
+    max-width: 1800px;
+  }
+  
+  #main a {
+    text-decoration: none;
+  }
+  
+  .card {
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin: 20px; */
+    text-decoration: none;
+    border-radius: 10px;
+  }
+  
+  .white-color {
+    color: white;
+  }
+  
+  .black-color {
+    color: black;
+  }
+  
+  .card p {
+    font-size: 24px;
+    margin-left: 10px;
+  }
+  
+  .scale {
+    transition: all 0.2s ease-in-out;
+  }
+  .scale:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    filter: brightness(1.2);
+  }
+  
+  .blue-bg {
+    background-color: #3b5180;
+  }
+  .dark-blue-bg2 {
+    background-color: #323754;
+  }
+  .pink-bg {
+    background-color: #dd2a7b;
+  }
+  .dark-blue-bg {
+    background-color: #2867b2;
+  }
+  .purple-bg {
+    background-color: #6e5494;
+  }
+  .red-bg {
+    background-color: #ff0000;
+  }
+  .green-bg {
+    background-color: #25d366;
+  }
+  .dark-green-bg {
+    background-color: #00b760;
+  }
+  .light-red-bg {
+    background-color: #db4437;
+  }
+  .black-bg {
+    background-color: black;
+  }
+  .orange-bg {
+    background-color: #e24329;
+  }
+  .orange-bg2 {
+    background-color: #f79e1b;
+  }
+  .yellow-bg {
+    background-color: #f7b928;
+  }
+  .brown-bg {
+    background-color: #7c4516;
+  }
+  .green-bg {
+    background-color: #558d44;
+  }
+  .dark-red-bg {
+    background-color: #AB341D;
+  }
